@@ -27,3 +27,13 @@ export let myNPC = new NPC(
     }
   }
 );
+
+myNPC.followPath({
+  path: [new Vector3(2, 0, 2), new Vector3(2, 0, 4), new Vector3(6, 0, 2)],
+  loop: true,
+  curve: true,
+  startingPoint: 0,
+  onFinishCallback: () => {
+    log('Finished!');
+  }
+});
