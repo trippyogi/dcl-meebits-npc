@@ -1,5 +1,5 @@
 import { NPC } from '@dcl/npc-scene-utils';
-import { ILoveCats } from './dialog';
+import { ILoveMeebits } from './dialog';
 
 export let myNPC = new NPC(
   {
@@ -9,7 +9,7 @@ export let myNPC = new NPC(
   },
   'models/meebit_13186_t_solid.glb',
   () => {
-    myNPC.talk(ILoveCats, 0);
+    myNPC.talk(ILoveMeebits, 0);
   },
   {
     // idleAnim: `Weight_Shift`,
